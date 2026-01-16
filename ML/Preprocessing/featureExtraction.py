@@ -13,6 +13,8 @@ This module processes CSV files containing raw radar data and computes
 a comprehensive set of features for occupancy detection or classification.
 Features include energy metrics, spatial distributions, peak characteristics,
 and doppler analysis.
+
+Written by: Kasper Schröder, Martins Egbe
 """
 
 #Radar dimensions

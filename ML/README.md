@@ -55,7 +55,27 @@ deactivate
 
 ## Preprocessing the Data
 
+The [Preprocessing/preprocessing.py](Preprocessing/preprocessing.py) script orchestrates the complete preprocessing pipeline, running all necessary steps sequentially:
+
+1. **Background Subtraction** - Removes static background from radar data
+2. **Feature Extraction** - Extracts 25 statistical features from range-Doppler maps
+3. **Data Synchronization** - Merges radar features with camera data by timestamp
+
+### Run Preprocessing
+
+In [Preprocessing/preprocessing.py](Preprocessing/preprocessing.py) update the filenames to make sure that the script uses the correct data and stores the dataset in a CSV file with a name the user chooses.
+
+```bash
+cd Preprocessing
+python preprocessing.py
+```
+
+This will process the raw radar and camera data and create a merged dataset ready for training.
+
 ### Output
+
+- Merged dataset: `data/merged/` 
+The folder where merged csv files are saved with the name chosen.
 
 ## Training the ML
 
