@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.venv
+
+# Distribution / packaging
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Logs and debug
+*.log
+# *.csv
+
+# IDE settings
+.vscode/
+.idea/
+
+# macOS / Windows noise
+.DS_Store
+Thumbs.db
