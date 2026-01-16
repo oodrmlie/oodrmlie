@@ -52,7 +52,7 @@ def run(on_frame_callback, status_callback, stop_event, fps_callback):
     # "root" is the username
     # "YoloTracking" is the password
     # /axis-media/media.amp = axis fixed path
-    IP = "169.254.41.207"
+    IP = "169.254.41.208"
     CAM_URL = f"rtsp://root:YoloTracking@{IP}/axis-media/media.amp"
 
     # load the COCO classes + save in an array
@@ -241,10 +241,42 @@ def run(on_frame_callback, status_callback, stop_event, fps_callback):
 
 
     except Exception as e:
-        print(f"An error occurred during processing YOLO results: {e}")
-        raise SystemExit("Camera stream stopped unexpectedly.")
+        status_callback(f"Error: Camera stream stopped - {str(e)}")
+        return
 
     finally:
         fsh.stop_video_log()
 
     # clean terminate application after breaking out the loop
+
+
+#Test mode: allows running pmain3 standalone to verify camera works
+if __name__ == "__main__":
+    import threading
+    from threading import Event
+    
+    #Create simple display window for testing
+    stop_event = Event()
+    
+    def on_frame_callback(frame):
+        #Display frame in a window
+        cv2.imshow("Camera Test", frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            stop_event.set()
+    
+    def status_callback(message):
+        #Print status messages to console
+        print(f"[STATUS] {message}")
+    
+    def fps_callback(fps):
+        #Print FPS to console
+        print(f"[FPS] {fps:.1f}")
+    
+    try:
+        #Run the main detection loop
+        run(on_frame_callback, status_callback, stop_event, fps_callback)
+    except KeyboardInterrupt:
+        print("Stopping...")
+        stop_event.set()
+    finally:
+        cv2.destroyAllWindows()

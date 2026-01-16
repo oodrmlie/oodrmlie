@@ -591,7 +591,7 @@ ip_entry = tk.Entry(
 ip_entry.place(x=280, y=YOLO_START_Y, width=200, height=28)
 
 ip_entry.config(state="normal")
-ip_entry.insert(tk.END, "169.254.41.207")
+ip_entry.insert(tk.END, "169.254.41.208")
 ip_entry.config(state="disabled")
 
 
