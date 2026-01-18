@@ -113,4 +113,4 @@ if __name__ == "__main__":
         #Start continuous radar data logging (runs until Ctrl+C)
         subprocess.run([sys.executable, loggerFile])
     except KeyboardInterrupt:
-        print("Stopped by user.")  #Graceful shutdown on Ctrl+C
+        print("Stopped by user.")  #shutdown on Ctrl+C

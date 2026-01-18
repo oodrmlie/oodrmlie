@@ -38,7 +38,7 @@ HEADER = ["timestamp", "raw"]
 
 #Frame protocol constants for binary packet detection
 FRAME_HEADER = [0xAA, 0xBF, 0x10, 0x14]  #Marks start of radar frame
-FRAME_TAIL   = [0xFD, 0xFC, 0xFB, 0xFA]  #Marks end of radar frame  #Marks end of radar frame
+FRAME_TAIL   = [0xFD, 0xFC, 0xFB, 0xFA]  #Marks end of radar frame
 
 #Create data directory if it doesn't exist
 DATA_DIRECTORY = os.path.join(os.path.dirname(__file__), "data")
@@ -128,7 +128,7 @@ def parse_csv():
     #Configure serial port parameters
     ser = serial.Serial()
     ser.port = COM_PORT
-    ser.baudrate = BAUD_RATE
+    ser.baudrate = Baud_RATE
     ser.timeout = 2
     ser.rtscts = False  #Disable hardware flow control  #Disable hardware flow control
     ser.dsrdtr = False
@@ -154,7 +154,7 @@ def parse_csv():
     path = today_filepath()
     ensure_header(path)
 
-    print(f"Listening on {COM_PORT} @ {BAUD_RATE}. Writing to {path}. Ctrl+C to stop.")
+    print(f"Listening on {COM_PORT} @ {Baud_RATE}. Writing to {path}. Ctrl+C to stop.")
 
     #Frame accumulator for binary packet parsing
     collecting = False
