@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     #Display sample of predictions (last 20 rows)
     print("\nexample of predictions:")
-    print(results.tail(20))
+    print(results)
 
     #Print evaluation metrics
     print(f"test accuracy: {acc:.3f}")

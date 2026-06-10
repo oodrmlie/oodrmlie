@@ -1,0 +1,12 @@
+Log Cluster: ID_20260116_160631_500345
+------------------------------------------------
+SETTINGS:
+Minimum Confidence: 0.35
+Minimum Area: 100
+Aspect Ratio Range: 0.25 - 4.0
+Frame Resolution: 388 x 690
+------------------------------------------------
+ID: 1 | frame: 3 | start: 2026-01-16 16:06:37.127 | end: 2026-01-16 16:06:37.129 | process: 0.003s | people detected: 2
+ID: 2 | frame: 6 | start: 2026-01-16 16:06:38.643 | end: 2026-01-16 16:06:38.645 | process: 0.002s | people detected: 2
+ID: 3 | frame: 9 | start: 2026-01-16 16:06:39.980 | end: 2026-01-16 16:06:39.982 | process: 0.002s | people detected: 2
+ID: 4 | frame: 12 | start: 2026-01-16 16:06:41.735 | end: 2026-01-16 16:06:41.737 | process: 0.002s | people detected: 2

@@ -3,6 +3,9 @@ from xgboost import XGBClassifier
 import joblib
 import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
 """
 XGBoost Model Training for Occupancy Classification.
 
@@ -15,8 +18,9 @@ Written by: Rana Noorzadeh
 """
 
 #File paths and training configuration
-MODEL_PATH = "../XG_boost/people_counter_xgb_class.pkl"  #Path to save/load trained model
-TRAIN_DATA_PATH = "../Ready_datasets/dataset1.csv"       #Path to training dataset
+MODEL_PATH = os.path.join(BASE_DIR, "people_counter_xgb_class_100.pkl")  #Path to save/load trained model
+TRAIN_DATA_PATH = os.path.join(BASE_DIR, "..", "Ready_datasets", "Train_100per_T1923 (2).csv")      #Path to training dataset
+
 ALLOWED_CLASSES = [0, 1, 2]                             #Valid occupancy classes: 0, 1, or 2 people
 
 def load_train_data():

@@ -1,0 +1,30 @@
+Log Cluster: ID_20260325_161103_746133
+------------------------------------------------
+SETTINGS:
+Minimum Confidence: 0.35
+Minimum Area: 100
+Aspect Ratio Range: 0.25 - 4.0
+Frame Resolution: 388 x 690
+------------------------------------------------
+ID: 1 | frame: 3 | start: 2026-03-25 16:11:08.942 | end: 2026-03-25 16:11:08.944 | process: 0.002s | people detected: 2
+ID: 2 | frame: 6 | start: 2026-03-25 16:11:10.429 | end: 2026-03-25 16:11:10.431 | process: 0.002s | people detected: 2
+ID: 3 | frame: 9 | start: 2026-03-25 16:11:12.219 | end: 2026-03-25 16:11:12.222 | process: 0.003s | people detected: 2
+ID: 4 | frame: 12 | start: 2026-03-25 16:11:13.616 | end: 2026-03-25 16:11:13.618 | process: 0.002s | people detected: 2
+ID: 5 | frame: 15 | start: 2026-03-25 16:11:14.965 | end: 2026-03-25 16:11:14.969 | process: 0.004s | people detected: 2
+ID: 6 | frame: 18 | start: 2026-03-25 16:11:16.399 | end: 2026-03-25 16:11:16.401 | process: 0.002s | people detected: 3
+ID: 7 | frame: 21 | start: 2026-03-25 16:11:17.897 | end: 2026-03-25 16:11:17.899 | process: 0.002s | people detected: 2
+ID: 8 | frame: 24 | start: 2026-03-25 16:11:19.326 | end: 2026-03-25 16:11:19.328 | process: 0.002s | people detected: 2
+ID: 9 | frame: 27 | start: 2026-03-25 16:11:21.871 | end: 2026-03-25 16:11:21.873 | process: 0.002s | people detected: 2
+ID: 10 | frame: 30 | start: 2026-03-25 16:11:23.249 | end: 2026-03-25 16:11:23.251 | process: 0.002s | people detected: 2
+ID: 11 | frame: 33 | start: 2026-03-25 16:11:24.557 | end: 2026-03-25 16:11:24.559 | process: 0.002s | people detected: 2
+ID: 12 | frame: 36 | start: 2026-03-25 16:11:25.864 | end: 2026-03-25 16:11:25.866 | process: 0.002s | people detected: 2
+ID: 13 | frame: 39 | start: 2026-03-25 16:11:27.140 | end: 2026-03-25 16:11:27.142 | process: 0.002s | people detected: 2
+ID: 14 | frame: 42 | start: 2026-03-25 16:11:28.417 | end: 2026-03-25 16:11:28.419 | process: 0.002s | people detected: 2
+ID: 15 | frame: 45 | start: 2026-03-25 16:11:29.793 | end: 2026-03-25 16:11:29.794 | process: 0.001s | people detected: 2
+ID: 16 | frame: 48 | start: 2026-03-25 16:11:31.071 | end: 2026-03-25 16:11:31.073 | process: 0.002s | people detected: 2
+ID: 17 | frame: 51 | start: 2026-03-25 16:11:32.431 | end: 2026-03-25 16:11:32.433 | process: 0.002s | people detected: 2
+ID: 18 | frame: 54 | start: 2026-03-25 16:11:33.809 | end: 2026-03-25 16:11:33.811 | process: 0.002s | people detected: 2
+ID: 19 | frame: 57 | start: 2026-03-25 16:11:35.155 | end: 2026-03-25 16:11:35.157 | process: 0.002s | people detected: 2
+ID: 20 | frame: 60 | start: 2026-03-25 16:11:37.133 | end: 2026-03-25 16:11:37.134 | process: 0.001s | people detected: 2
+ID: 21 | frame: 63 | start: 2026-03-25 16:11:38.524 | end: 2026-03-25 16:11:38.526 | process: 0.002s | people detected: 2
+ID: 22 | frame: 66 | start: 2026-03-25 16:11:40.016 | end: 2026-03-25 16:11:40.019 | process: 0.003s | people detected: 2
