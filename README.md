@@ -3,7 +3,7 @@
 ## Overview
 This repository implements a multi-sensor occupancy detection system that combines mmWave radar and camera data to count the number of people in a room. 
 
-This specific repository is an **extended and restructured version** of the original bachelor project [11]. While the initial system utilized a fixed, 100% background subtraction preprocessing mechanism, this version introduces a **Parameterized Preprocessing Artifact** (`backgroundSubtraction.py`) that exposes the subtraction strength as a user-controlled parameter (0% to 100%), alongside an **Automated Evaluation Script** (`evaluation_script.py`) designed to test model robustness and extract absolute multi-class classification metrics across varying environmental noise levels.
+This specific repository is an **extended and restructured version** of the original bachelor project [11]. While the initial system utilized a fixed, 100% background subtraction preprocessing mechanism, this version introduces a **Parameterized Preprocessing Artifact** (`backgroundSubtraction.py`) in ML/Preprocessing, that exposes the subtraction strength as a user-controlled parameter (0% to 100%), alongside an **Automated Evaluation Script** (`xgtest2.py`) in ML/XG_boost, designed to test model robustness and extract absolute multi-class classification metrics across varying environmental noise levels.
 
 The system architecture consists of three main modules:
 1. **Radar Module**: Captures range-Doppler data from an mmWave radar sensor.
